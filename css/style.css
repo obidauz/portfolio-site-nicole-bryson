@@ -93,12 +93,9 @@ a:active {color: #9bd0c8;} /* set link style when clicked */
 }
 
 .button.contact:hover:after, .button.contact:focus { /* set button style for email button for hover and focus */
-    content: url(files/orange_blob.png)
-    display: block;
-    
-    /* background-color: #e1541f;
+    background-color: #e1541f;
     color: #ffffff;
-    box-shadow: 0 5px 15px #7c361cad; */
+    box-shadow: 0 5px 15px #7c361cad;
 }
 
 .button.contact:active { /* set button style for email button when clicked */
