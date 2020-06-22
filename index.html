@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Prompt:wght@100;400&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Prompt:wght@100;200;300;400&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
     <title>The Main Page of Nicole Bryson</title>
   </head>
   <!-- END OF HEAD -->
@@ -14,10 +14,10 @@
   <body>
     <!-- START HEADER SECTION -->
     <header>
-      <div>
+      <div class="container">
         <!-- LOGO WITH HOME LINK -->
         <a href="index.html">
-          <img src="files/logo_orange.svg" alt="Nicole Bryson">
+          <img src="files/logo.svg" id="logo" alt="Nicole Bryson">
         </a>
         <!-- NAVIGATION MENU -->
         <nav>
@@ -35,10 +35,10 @@
     <main>
       <!-- HERO SECTION -->
       <div id="hero">
-        <div>
+        <div class="container">
           <h1>
             Howdy, my name is Nicole Bryson.
-            <br><span>I'm a UX/UI designer from Brookyln!</span>
+            <br><span>I'm a UX/UI designer from Brooklyn!</span>
           </h1>
           <p>
             I am a veterinary technician-turned-UX designer who will fight for my users.
@@ -51,10 +51,10 @@
 
       <!-- WORK SECTION -->
       <div id="work">
-        <div>
+        <div class="container">
           <h2>My Work</h2>
           <!-- FITTED -->
-          <div><!-- open row with 2 columns for project -->
+          <div class="row"><!-- open row with 2 columns for project -->
             <div><!-- open first column for image -->
               <picture>
                 <source srcset="img/fitted/1x/fitted_image@1x.jpg" media="(max-width:767px)">
@@ -94,7 +94,7 @@
 
     <!-- START FOOTER SECTION -->
     <footer id="contact">
-      <div>
+      <div class="container">
         <h2>Get in Touch</h2>
         <p>If you like my work and want to chat with me about possible opportunities, please feel free to reach out at <a href="+123456">+123456</a>!
           <br>Prefer email? You can email me using the button below.</p>
