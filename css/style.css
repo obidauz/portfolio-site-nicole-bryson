@@ -1,6 +1,7 @@
 /*
 colors used:
-dark blue: #343f58;
+blue: #2b56a0;
+dark blue: #130f3a;
 peacock green: #2b7e78;
 orange #e1541f;
 light green: #d9eec5;
@@ -11,46 +12,56 @@ dusty rose: #db686f;
 bright pink: #d3384e;
 */
 
-body {
+* {box-sizing: border-box;} /* sets box model*/
+
+body { /* select body design */
+    background-color: #fffefc;
     font-family: 'Trirong', serif;
     font-size: 16px;
     font-weight: 200;
     line-height: 1.6;
-    color: #343f58;
+    color: #130f3a;
 }
 
-h1, h2, h3, h4 {
+header, #contact { /* set header and footer design */
+    background-color: #ffdac7;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 5px 15px #642f337c;
+}
+
+h1, h2, h3, h4 { /* set style for all headings */
     font-family: 'Prompt', sans-serif;
     line-height: 1.4;
-    font-weight: 100;
+    color: #2b56a0;
 }
 
-h1, h2 {color: #e1541f;}
-h3, h4 {color: #2b7e78;}
-h1 {font-size: 2.75em;}
-h2 {font-size: 2.25em;}
-h3 {font-size: 1.75em;}
-h4 {font-size: 1.35em;}
+/* set font sizes for all headings */
+h1 {font-size: 2.75em; font-weight: 300;}
+h2 {font-size: 2.25em; font-weight: 200;}
+h3 {font-size: 1.75em; font-weight: 100;}
+h4 {font-size: 1.35em; font-weight: 100;}
 
-img {width: 100%;}
+img {width: 100%;} /* set all image width */
+#logo {max-width: 250px;} /* set width for logo */
 
-a {
+a { /* set link style */
     color: #343f58;
     text-decoration: none;
 }
 
-a:visited {color: #2b7e78;}
+a:visited {color: #130f3a;} /* set link style after visited */
 
-a:hover, a:focus {
+a:hover, a:focus { /* set link style for hover and focus (on mobile) */
     color: #db686f;
     text-decoration: underline;
     font-style: italic;
 }
 
-a:active {color: #9bd0c8;}
+a:active {color: #9bd0c8;} /* set link style when clicked */
 
-.button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+.button { /* set button style for project buttons */
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: #9bd0c8;
     font-family: Prompt, sans-serif;
     color: #ffffff; /* needed to override the default link color */
@@ -60,21 +71,20 @@ a:active {color: #9bd0c8;}
     box-shadow: 0 7px #608681;
     transition: 0.2s opacity;
 }
-.button:hover {
+.button:hover, .button:focus { /* set button style for project buttons when hovering and focus */
     opacity: 0.8;
     text-decoration: none;
     font-style: normal;
     color: #ffffff;
 }
 
-.button:visited {color:#ffffff;}
-
-.button:active {
+.button:active { /* set button style for project buttons when clicked */
     box-shadow: 0 5px #3d5f5b;
     transform: translateY(4px);
 }
 
-.button.contact {
+.button.contact { /* set button style for email button */
+    display: inline-block;
     background-color: transparent;
     color: #e1541f;
     text-transform: uppercase;
@@ -82,18 +92,22 @@ a:active {color: #9bd0c8;}
     box-shadow: unset;
 }
 
-.button.contact:hover {
-    background-color: #e1541f;
+.button.contact:hover:after, .button.contact:focus { /* set button style for email button for hover and focus */
+    content: url(files/orange_blob.png)
+    display: block;
+    
+    /* background-color: #e1541f;
     color: #ffffff;
-    box-shadow: 0 5px 15px #7c361cad;
+    box-shadow: 0 5px 15px #7c361cad; */
 }
 
-.button.contact:active {
+.button.contact:active { /* set button style for email button when clicked */
     box-shadow: unset;
     transform: unset;
 }
 
-.button.resume {
+.button.resume { /* set button style for view resume button */
+    display: inline-block;
     background-color: transparent;
     color: #d3384e;
     text-transform: uppercase;
@@ -101,13 +115,28 @@ a:active {color: #9bd0c8;}
     box-shadow: unset;
 }
 
-.button.resume:hover {
+.button.resume:hover, .button.resume:focus { /* set button style for view resume button for hover and fucus */
     background-color: #d3384e;
     color: #ffffff;
     box-shadow: 0 5px 15px #812533af;
 }
 
-.button.resume:active {
+.button.resume:active { /* set button style for view resume button when clicked */
     transform: unset;
     box-shadow: unset;
+}
+
+/* Layout styling */
+
+.container { 
+    padding: 0 15px; /* adds padding to all container classes */
+}
+
+.row { 
+    margin: 25px 0; /* adds margin 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+    border-bottom: 1px solid #d3384e;
+    padding-bottom: 25px;
 }
