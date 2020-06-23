@@ -17,7 +17,7 @@
       <div class="container">
         <!-- LOGO WITH HOME LINK -->
         <a href="index.html">
-					<img src="files/logo.svg" id="logo" alt="Nicole Bryson">
+					<img src="files/logo.svg" class="logo" alt="Nicole Bryson">
 				</a>
         <!-- NAVIGATION MENU -->
         <nav>
@@ -34,7 +34,7 @@
     <!-- START MAIN SECTION -->
     <main>
 			<!-- Fitted Header-->
-			<div id="fitted header">
+			<div id="fitted_header">
 				<div class="container">
 					<h1>FITTED</h1>
 				</div>
@@ -48,36 +48,25 @@
             <source srcset="img/fitted/1x/fitted_screen_display@1x.jpg" media="(max-width:767px)">
 						<img src="img/fitted/2x/fitted_screen_display@2x.jpg" alt="FITTED screen display">
 					</picture>
-					<div>
             <!-- create 2 rows to hold columns-->
             <!-- row 1 -->
-            <div>
-              <!-- create 3 columns for information -->
-              <div>
-                <h4>Role:</h4>
-                <p>UI/UX Designer</p>
-              </div>
-              <div>
-                <h4>Client:</h4>
-                <p>CareerFoundry</p>
-              </div>
-              <div>
-                <h4>Duration:</h4>
-                <p>2 months</p>
-              </div>
+            <div class="row">
+                <p><b>Role: </b>UI/UX Designer</p>
+                <p><b>Client: </b>CareerFoundry</p>
+                <p><b>Duration: </b>2 months</p>
             </div>
             <!-- end row 1 -->
             <!-- row 2 -->
-            <div>
+            <div class="row">
               <!-- create 3 columns for information -->
-              <div>
+              <div class="column">
                 <h4>Overview:</h4>
                 <p>
                   Fitted is a responsive web app designed to help find or reignite their passion for fitness. 
                   It was created to help users fit workouts into their busy schedules and keep them motivated to get and stay in shape.
                 </p>
               </div>
-              <div>
+              <div class="column">
                 <h4>Tasks:</h4>
                 <ul>
                   <li>User Flows</li>
@@ -87,7 +76,7 @@
                   <li>Responsive Layouts</li>
                 </ul>
               </div>
-              <div>
+              <div class="column">
                 <h4>Tools:</h4>
                 <ul>
                   <li>Balsamiq</li>
@@ -99,7 +88,6 @@
               </div>
             </div>
             <!-- end row 2-->
-          </div>
         </div>
 			</div>  
       <!-- end overview section -->
@@ -113,7 +101,7 @@
             <img src="img/fitted/2x/3_screen_mockup@2x.png" alt="FITTED 3 screen mockup">
           </picture>
           <!-- introduction to fitted -->
-          <div>
+          <div class="section">
             <h3>Objective</h3>
             <p>To motivate people into an exercise routine the suits their level, schedule, and interests</p>
             <h3>The 5 Ws of FITTED</h3>
@@ -131,7 +119,7 @@
           <!-- end introduction-->
 
           <!-- start user persona -->
-          <div>
+          <div class="section">
             <h3>User Persona</h3>
             <p>
               Fitted users are busy, tech savvy professionals who need to find a way to fit exercise into their hectic schedules.
@@ -139,7 +127,7 @@
             </p>
             <!-- create 2 rows for columns-->
             <!-- row one -->
-            <div>
+            <div class="row">
               <div>
                 <picture>
                   <source srcset="img/fitted/1x/user_profile_photo@1x.jpg" media="(max-width:767px)">
@@ -185,7 +173,7 @@
           <!-- end user persona -->
 
           <!-- start user flow -->
-          <div>
+          <div class="section_picture_first">
             <picture>
               <source srcset="img/fitted/1x/user_flow@1x.png" media="(max-width:767px)">
               <img src="img/fitted/2x/user_flow@2x.png" alt="FITTED user flow">
@@ -196,7 +184,7 @@
           <!-- end user flow -->
 
           <!-- start low-fidelity wireframes -->
-          <div>
+          <div class="section_picture_first">
             <picture>
               <source srcset="img/fitted/1x/low_fidelity_wireframes@1x.png" media="(max-width:767px)">
               <img src="img/fitted/2x/low_fidelity_wireframes@2x.png" alt="low-fidelity wireframes">
@@ -207,7 +195,7 @@
           <!-- end low-fidelity wireframes -->
 
           <!-- start mid-fidelity wireframes-->
-          <div>
+          <div class="section_picture_first">
             <picture>
               <source srcset="img/fitted/1x/mid_fidelity_wireframes@1x.png" media="(max-width:767px)">
               <img src="img/fitted/2x/mid_fidelity_wireframes@2x.png" alt="mid-fidelity wireframes">
@@ -218,7 +206,7 @@
           <!-- end mid-fidelity wireframes -->
 
           <!-- start mood boards -->
-          <div>
+          <div class="section">
             <h3>Mood Boards</h3>
             <p>Before I could decide upon colors and typography to add to my high-fidelity wireframes, I created two mood boards of two different themes, a light and a dark.</p>
             <!-- create 2 rows for light and dark mood boards with 2 columns each -->
@@ -268,7 +256,7 @@
           <!-- end mood boards -->
 
           <!-- high-fidelity wireframes -->
-          <div>
+          <div class="section_picture_first">
             <picture> 
               <source srcset="img/fitted/1x/high_fidelity_wireframes@1x.png" media="(max-width:767px)">
               <img src="img/fitted/2x/high_fidelity_wireframes@2x.png" alt="high-fidelity wireframes">
@@ -281,7 +269,7 @@
           <!-- end high-fidelity wireframes -->
 
           <!-- start style guide -->
-          <div>
+          <div class="section_picture_first">
             <picture>
               <source srcset="img/fitted/1x/style_guide@1x.jpg" media="(max-width:767px)">
               <img src="img/fitted/2x/style_guide@2x.jpg" alt="style guide">
@@ -292,21 +280,21 @@
           <!-- end style guide -->
 
           <!-- start responsive design -->
-          <div>
+          <div class="section">
             <h3>Responsive Design</h3>
             <p>Finally, as FITTED is a responsive web app, I created designs for the different breakpoints on mobile, tablet, and desktop views of the app.</p>
             <!-- create row with 2 columns for homepage and schedule responsive designs -->
             <div>
               <div>
                 <picture>
-                  <source srcset="img/fitted/homepage_responsive_design@1x.png" media="(max-width:767px)">
+                  <source srcset="img/fitted/1x/homepage_responsive_design@1x.png" media="(max-width:767px)">
                   <img src="img/fitted/2x/homepage_responsive_design@2x.png" alt="homepage responsive design">
                 </picture>
                 <h4>Homepage</h4>
               </div>
               <div>
                 <picture>
-                  <source srcset="img/fitted/schedule_responsive_design@1x.png" media="(max-width:767px)">
+                  <source srcset="img/fitted/1x/schedule_responsive_design@1x.png" media="(max-width:767px)">
                   <img src="img/fitted/2x/schedule_responsive_design@2x.png" alt="schedule responsive design">
                 </picture>
                 <h4>Schedule</h4>
@@ -369,32 +357,11 @@
 				<div><!-- open space for social media links -->
 					<!-- LinkedIn-->
 					<a href="https://www.linkedin.com/in/nicole-bryson/" target="_blank">
-            <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" 
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g>
-                <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"/>
-                <g>
-                <rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/>
-                  <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/>
-                  <circle cx="9" cy="8" fill="#FFFFFF" r="2"/>
-                </g>
-              </g>
-            </svg>
-					</a>
-					<!-- Behance -->
+            <img src="files/linkedin_icon.svg" class="social_media_icon" alt="linkedin icon">
+          </a>
+          <!-- Behance -->
           <a href="https://www.behance.net/nicolebryson" target="_blank">
-						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd">
-							<g>
-								<title>background</title>
-								<rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-							</g>
-							<g>
-								<title>Layer 1</title>
-								<rect fill="none" y="0" x="0" width="24" id="Artboard8" height="24"/>
-								<rect id="svg_2" fill="#0056ff" y="2" x="2" width="20" height="20"/>
-								<path id="svg_3" fill="#fff" d="m15.594,16.415l0,0c-0.808,0 -1.583,-0.321 -2.155,-0.893c-0.571,-0.571 -0.892,-1.346 -0.892,-2.154c0,-0.13 0,-0.261 0,-0.391c0,-0.808 0.321,-1.583 0.892,-2.154c0.572,-0.572 1.347,-0.893 2.155,-0.893l0,0c0.808,0 1.583,0.321 2.154,0.893c0.572,0.571 0.893,1.346 0.893,2.154c0,0.13 0,0.261 0,0.391c0,0.078 -0.003,0.157 -0.009,0.234l-4.444,0l0,0.078c0,0.777 0.629,1.407 1.406,1.407c0,0 0,0 0,0c0.52,0 0.975,-0.283 1.218,-0.704l1.654,0c-0.15,0.425 -0.393,0.815 -0.718,1.139c-0.571,0.572 -1.346,0.893 -2.154,0.893zm-10.235,-8.828c0,0 2.315,-0.001 4.162,-0.002c0.595,0 1.166,0.236 1.587,0.657c0.421,0.421 0.658,0.992 0.658,1.588c0,0 0,0 0,0c0,0.892 -0.569,1.651 -1.363,1.935c0.402,0.078 0.776,0.274 1.07,0.568c0.387,0.388 0.605,0.913 0.605,1.462c0,0 0,0 0,0c0,0.653 -0.259,1.28 -0.721,1.742c-0.462,0.462 -1.089,0.721 -1.742,0.721c-1.918,0 -4.256,0 -4.256,0l0,-8.671zm5,6.093c0,-0.31 -0.123,-0.609 -0.343,-0.828c-0.22,-0.22 -0.518,-0.344 -0.829,-0.344c-0.942,0 -2.109,0 -2.109,0l0,2.344c0,0 1.167,0 2.109,0c0.311,0 0.609,-0.123 0.829,-0.343c0.22,-0.22 0.343,-0.518 0.343,-0.829c0,0 0,0 0,0zm6.635,-1.146c-0.066,-0.715 -0.668,-1.276 -1.4,-1.276c0,0 0,0 0,0c-0.733,0 -1.335,0.561 -1.401,1.276l2.801,0zm-6.869,-2.447c0,-0.604 -0.49,-1.094 -1.094,-1.094c-0.874,0 -1.953,0 -1.953,0l0,2.187c0,0 1.079,0 1.953,0c0.604,0 1.094,-0.489 1.094,-1.093c0,0 0,0 0,0zm7.587,-2.029l0,1.017l-4.208,0l0,-1.017l4.208,0z"/>
-							</g>
-						</svg>
+            <img src="files/behance_icon.svg" class="social_media_icon" alt="behance icon">
           </a>
         </div><!-- end social media space -->
         <p>Copyright Nicole Bryson 2020</p>
