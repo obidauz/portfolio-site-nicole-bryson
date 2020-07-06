@@ -34,9 +34,9 @@
     <!-- START MAIN SECTION -->
     <main>
 			<!-- About Me Header-->
-			<div id="about header">
+			<div id="about_header">
 				<div class="container">
-					<h1>About</h1>
+					<h1>About Me</h1>
 				</div>
 			</div>
 			<!-- end about me header-->
@@ -47,11 +47,9 @@
 					<picture>
 						<source srcset="img/about_me/picture_of_me@1x.jpg" media="(max-width:767px)">
 						<img src="img/about_me/picture_of_me@2x.jpg" alt="FITTED Image">
-					</picture>
-					<!-- create row for columns -->
-					<div>
-						<!-- my story column-->
-						<div>
+          </picture>
+						<!-- my story row-->
+						<div class="row">
 							<h2>My Story</h2>
 							<p>
 								I am a budding UX designer who just
@@ -87,14 +85,18 @@
 								the world better than they found it, and if they want to help animals, that is just a
 								plus!
 							</p>
-							<a href="files/nbryson_2019_resume.pdf" class="button resume" target="_blank">View my CV</a>
-						</div>
+              <a href="files/nbryson_2019_resume.pdf" class="button resume" target="_blank">
+                <img src="files/resume_button.svg" class="default" alt="view my resume">
+                <img src="files/resume_button_hover.svg" class="hover" alt="view my resume">
+                <img src="files/resume_button_click.svg" class="click" alt="view my resume">
+              </a>
+            </div>
 						<!-- end my story-->
-						<!-- skills and tools column-->
-						<div>
+            <!-- skills and tools row-->
+						<div class="row">
 							<h2>Skills & Tools</h2>
 							<!-- skills column -->
-							<div>
+							<div class="col-md-6">
 								<h4>Relevant Skills</h4>
 								<ul>
 									<li>Mobile-first and Responsive Design</li>
@@ -107,7 +109,7 @@
 							</div>
 							<!-- end skills column-->
 							<!-- tools column-->
-							<div>
+							<div class="col-md-6">
 								<h4>Tools I Used</h4>
 								<ul>
 									<li>Sketch</li>
@@ -124,7 +126,7 @@
 					</div>
 					<!-- end row for columns -->
 					<!-- row for interests-->
-					<div>
+					<div class="container">
 						<h2>Interests</h2>
 						<p>
 							I love reading. I try to read every day and my current GoodReads challenge is to read 20 books this year. 
@@ -150,7 +152,11 @@
         <p>If you like my work and want to chat with me about possible opportunities, please feel free to reach out at <a href="+123456">+123456</a>!
           <br>Prefer email? You can email me using the button below.</p>
         <div><!-- open space for email button -->
-          <a href="mailto:nicole.e.bryson@gmail.com" class="button contact">email me</a>
+          <a href="mailto:nicole.e.bryson@gmail.com" class="button contact">
+            <img src="files/email_button.svg" class="default" alt="email me">
+            <img src="files/email_button_hover.svg" class="hover" alt="email me">
+            <img src="files/email_button_click.svg" class="click" alt="email me">
+          </a>
         </div>
         <!-- end email space -->
 				<div><!-- open space for social media links -->
