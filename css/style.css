@@ -68,11 +68,19 @@ h3 {font-size: 1.75em; font-weight: 100;}
 h4 {font-size: 1.35em; font-weight: 100;}
 
 img {width: 100%;} /* set all image width */
+
 .logo {max-width: 250px;} /* set width for logo */
+
 .social_media_icon {
     height: 32px;
     width: 32px;
     margin: 5px;
+    transition: all 1s;
+    transform-origin: 50% 50%;
+}
+
+.social_media_icon:hover {
+    transform: scale(1.2);
 }
 
 a { /* set link style */
@@ -93,28 +101,40 @@ a:active {color: #9bd0c8;} /* set link style when clicked */
 /* button styling */
 
 /* project buttons */
-.button {display: inline-block;}
-.button .click, .button .hover {display: none;}
-.button:hover .hover, .button:focus .hover {display: inline-block;}
-.button:hover .default, .button:focus .default {display: none;}
-.button:active .click {display: inline-block;}
-.button:active .default, .button:active .hover {display: none;}
+.button .blob {display: none;}
+
+.button:hover .blob {display: inline;}
+
+.button:active .blob {display: none;}
+
+.button:active .background {
+    fill: #2B7E78;
+    fill-opacity: 0.5;
+}
 
 /* email me button */
-.button.contact {display: inline-block;}
-.button.contact .click, .button.contact .hover {display: none;}
-.button.contact:hover .hover, .button.contact:focus .hover {display: inline-block;}
-.button.contact:hover .default, .button.contact:focus .default {display: none;}
-.button.contact:active .click {display: inline-block;}
-.button.contact:active .default, .button.contact:active .hover {display: none;}
+.button.contact .blob {display: none;}
+
+.button.contact:hover .blob {display: inline;}
+
+.button.contact:active .blob {display: none;}
+
+.button.contact:active .background {
+    fill: #E1541F;
+    fill-opacity: 0.5;
+}
 
 /* resume button */
-.button.resume {display: inline-block;}
-.button.resume .click, .button.resume .hover {display: none;}
-.button.resume:hover .hover, .button.resume:focus .hover {display: inline-block;}
-.button.resume:hover .default, .button.resume:focus .default {display: none;}
-.button.resume:active .click {display: inline-block;}
-.button.resume:active .default, .button.resume:active .hover {display: none;}
+.button.resume .blob {display: none;}
+
+.button.resume:hover .blob {display: inline;}
+
+.button.resume:active .blob {display: none;}
+
+.button.resume:active .background {
+    fill: #DF5C6E;
+    fill-opacity: 0.67;
+}
 
 
 /* Layout styling */
