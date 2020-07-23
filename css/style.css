@@ -14,6 +14,10 @@ bright pink: #d3384e;
 
 * {box-sizing: border-box;} /* sets box model*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body { /* select body design */
     background-color: #fffefc;
     font-family: 'Trirong', serif;
@@ -25,8 +29,7 @@ body { /* select body design */
 
 header { /* set header and footer design */
     background-color: #ffdac7;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     box-shadow: 0 5px 15px #642f337c;
     position: fixed;
     width: 100%;
@@ -45,7 +48,7 @@ header { /* set header and footer design */
 }
 
 main {
-    padding-top: 133px;
+    padding-top: 64px;
 }
 
 #contact {
@@ -69,7 +72,7 @@ h4 {font-size: 1.35em; font-weight: 100;}
 
 img {width: 100%;} /* set all image width */
 
-.logo {max-width: 250px;} /* set width for logo */
+.logo {max-width: 150px;} /* set width for logo */
 
 .social_media_icon {
     height: 32px;
@@ -91,14 +94,11 @@ a { /* set link style */
 a:visited {color: #130f3a;} /* set link style after visited */
 
 a:hover, a:focus { /* set link style for hover and focus (on mobile) */
-    color: #db686f;
-    text-decoration: underline;
+    color: #2b56a0;
     font-style: italic;
 }
 
 a:active {color: #9bd0c8;} /* set link style when clicked */
-
-/* button styling */
 
 /* project buttons */
 .button .blob {display: none;}
@@ -166,21 +166,43 @@ a:active {color: #9bd0c8;} /* set link style when clicked */
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-nav > ul > li {display: inline-block;}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 10px 0 0;
+}
+
+.navtoggle.responsive li{
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
 
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: lowercase;
 }
-
-nav {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-}
-
 
 #overview .row {
     display: inline-block;
@@ -215,6 +237,20 @@ nav {
         margin-top: 4px;
     }
 
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li {display: inline-block;}
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
     main {padding-top: 99px;}
 
     body {font-size: 18px;}
@@ -224,6 +260,8 @@ nav {
     #work h3, #me h2, #me h4 {margin-top: 0;}
 
     #work h1 {text-align: center;}
+
+    .logo {max-width: 250px;}
 }
 
 /* large devices (1024px and larger) */
