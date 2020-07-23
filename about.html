@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Prompt:wght@100;200;300;400&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="files/css/all.css" rel="stylesheet">
     <title>About Nicole Bryson</title>
   </head>
   <!-- END OF HEAD -->
@@ -16,17 +17,20 @@
     <header>
       <div class="container">
         <!-- LOGO WITH HOME LINK -->
-        <a href="index.html">
-					<img src="files/logo.svg" class="logo" alt="Nicole Bryson">
-				</a>
-        <!-- NAVIGATION MENU -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li> 
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class= "navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img src="files/logo.svg" class="logo" alt="Nicole Bryson">
+          </a>
+          <!-- NAVIGATION MENU -->
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li> 
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- END HEADER -->
