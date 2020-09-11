@@ -19,12 +19,15 @@ html {
 }
 
 body { /* select body design */
-    background-color: #fffefc;
+    /*background-color: #fffefc;*/
     font-family: 'Trirong', serif;
     font-size: 16px;
     font-weight: 200;
     line-height: 1.6;
-    color: #130f3a;;
+    color: #130f3a;
+    background: rgba(255, 245, 243, 0.9);
+    border: 20px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 header { /* set header and footer design */
