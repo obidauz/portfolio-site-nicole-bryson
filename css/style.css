@@ -20,9 +20,9 @@ html {
 
 body { /* select body design */
     /*background-color: #fffefc;*/
-    font-family: 'Trirong', serif;
-    font-size: 16px;
-    font-weight: 200;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
     line-height: 1.6;
     color: #130f3a;
     background: rgba(255, 245, 243, 0.9);
@@ -31,19 +31,17 @@ body { /* select body design */
 }
 
 header { /* set header and footer design */
-    background-color: #ffdac7;
     padding: 10px 0 4px;
-    box-shadow: 0 5px 15px #642f337c;
     position: fixed;
     width: 100%;
 }
 
 #hero {
-    background-color: #ffdac7;
-    padding: 20px 0;
+    background-color: rgba(255, 245, 243, 0.9);
+    padding: 20px 0px;
     display: inline-block;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 #hero span {
@@ -55,23 +53,29 @@ main {
 }
 
 #contact {
-    background-color: #ffdac7;
+    background-color: rgba(255, 245, 243, 0.9);
     text-align: center;
     padding: 10px 0;
     margin-top: 25px;
 }
 
-h1, h2, h3, h4 { /* set style for all headings */
-    font-family: 'Prompt', sans-serif;
+h1 { /* set style for all headings */
+    font-family: 'Antic Didone', serif;
     line-height: 1.4;
     color: #130f3a;;
 }
 
+h3, h4{
+    font-family: 'Prompt', serif;
+    color: #F98C98;
+    text-transform: uppercase;
+}
+
 /* set font sizes for all headings */
-h1 {font-size: 2.5em; font-weight: 300;}
+h1 {font-size: 2.5em; font-weight: normal;}
 h2 {font-size: 2.25em; font-weight: 200;}
-h3 {font-size: 1.75em; font-weight: 100;}
-h4 {font-size: 1.35em; font-weight: 100;}
+h3 {font-size: 1.25em; font-weight: bold;}
+h4 {font-size: 1em; font-weight: bold;}
 
 img {width: 100%;} /* set all image width */
 
@@ -83,37 +87,62 @@ img {width: 100%;} /* set all image width */
     margin: 5px;
     transition: all 1s;
     transform-origin: 50% 50%;
+    border-bottom: none;
+    color: #F98C98;
+    background-color: rgba(255, 245, 243, 0.9);
 }
 
 .social_media_icon:hover {
     transform: scale(1.2);
+    border-bottom: none;
+}
+
+.currentLink {
+    color: #F98C98;
+    font-weight: bold;
+    letter-spacing: 0;
 }
 
 a { /* set link style */
-    color: #343f58;
+    color: #130f3a;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
+
 }
 
-a:visited {color: #130f3a;} /* set link style after visited */
-
 a:hover, a:focus { /* set link style for hover and focus (on mobile) */
-    color: #2b56a0;
-    font-style: italic;
+    color: #F98C98;
+    font-weight: bold;
+    border-bottom: #F98C98 3px solid;
+    letter-spacing: 0;
 }
 
 a:active {color: #9bd0c8;} /* set link style when clicked */
 
 /* project buttons */
-.button .blob {display: none;}
 
-.button:hover .blob {display: inline;}
-
-.button:active .blob {display: none;}
-
-.button:active .background {
-    fill: #2B7E78;
-    fill-opacity: 0.5;
+.button{
+    color: #F98C98;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+.button:hover {
+    border: #F98C98 solid 3px;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.button:active{
+    color: rgba(255, 245, 243, 0.9);
+    border: #F98C98 solid 3px;
+    border-radius: 50px;
+    background-color: #F98C98;
+    padding: 5px 10px;
+}
+
 
 /* email me button */
 .button.contact .blob {display: none;}
@@ -164,7 +193,7 @@ a:active {color: #9bd0c8;} /* set link style when clicked */
     padding-bottom: 25px;
 }
 
-#hero h1 {text-align: center;}
+#hero h1 {text-align: left;}
 
 #about_header h1, #me h2 {text-align: center;}
 
@@ -212,6 +241,7 @@ nav > ul > li > a {
     padding: 0 15px;
     text-transform: lowercase;
 }
+
 
 #overview .row {
     display: inline-block;
