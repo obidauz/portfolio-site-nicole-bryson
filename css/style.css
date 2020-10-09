@@ -41,11 +41,12 @@ header { /* set header and footer design */
     padding: 20px 0px;
     display: inline-block;
     width: 100%;
-    text-align: left;
+    text-align: right;
 }
 
 #hero span {
     display: block;
+    text-align: right;
 }
 
 main {
@@ -53,11 +54,19 @@ main {
 }
 
 #contact {
-    background-color: rgba(255, 245, 243, 0.9);
+    color: #F98C98;
     text-align: center;
     padding: 10px 0;
     margin-top: 25px;
 }
+
+#contact .fitted {
+    color: #A392D2;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
 
 h1 { /* set style for all headings */
     font-family: 'Antic Didone', serif;
@@ -71,30 +80,70 @@ h3, h4{
     text-transform: uppercase;
 }
 
+h3.fitted_style{
+    font-family: 'Prompt', serif;
+    color: #A392D2;
+    text-transform: uppercase;
+}
+
 /* set font sizes for all headings */
 h1 {font-size: 2.5em; font-weight: normal;}
 h2 {font-size: 2.25em; font-weight: 200;}
-h3 {font-size: 1.25em; font-weight: bold;}
+h3 {font-size: 1em; font-weight: bold;}
 h4 {font-size: 1em; font-weight: bold;}
 
-img {width: 100%;} /* set all image width */
+img {width: 100%; border-radius: 20px; box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);} /* set all image width */
 
-.logo {max-width: 150px;} /* set width for logo */
-
-.social_media_icon {
-    height: 32px;
-    width: 32px;
-    margin: 5px;
-    transition: all 1s;
-    transform-origin: 50% 50%;
-    border-bottom: none;
-    color: #F98C98;
-    background-color: rgba(255, 245, 243, 0.9);
+.no_boxshadow{
+    box-shadow: none;
 }
 
-.social_media_icon:hover {
+.no_flare{
+    box-shadow: none;
+    border-radius: 0px;
+}
+.grow {
+    transition: all .7s ease-in-out;
+}
+
+.grow:hover {
     transform: scale(1.2);
-    border-bottom: none;
+}
+
+.text-wrap{
+    width: 50%;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+.text-wrap-left{
+    width: 50%;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow: none;
+}
+
+
+.logo {max-width: 150px; box-shadow: none;} /* set width for logo */
+
+
+a.social-links { /* set link style */
+    color: #F98C98;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
+
+}
+
+a.social-links:hover, a.social-links:focus { /* set link style for hover and focus (on mobile) */
+    color: #F98C98;
+    font-weight: bold;
+    border-bottom: #F98C98 3px solid;
+    letter-spacing: 0;
 }
 
 .currentLink {
@@ -119,8 +168,28 @@ a:hover, a:focus { /* set link style for hover and focus (on mobile) */
     letter-spacing: 0;
 }
 
-a:active {color: #9bd0c8;} /* set link style when clicked */
+a.fitted_style:hover, a.fitted_style:focus { /* set link style for hover and focus (on mobile) */
+    color: #A392D2;
+    font-weight: bold;
+    border-bottom: #A392D2 3px solid;
+    letter-spacing: 0;
+}
 
+a.fitted-social { /* set link style */
+    color: #A392D2;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
+
+}
+
+a.fitted-social:hover, a.fitted-social:focus { /* set link style for hover and focus (on mobile) */
+    color: #A392D2;
+    font-weight: bold;
+    border-bottom: #A392D2 3px solid;
+    letter-spacing: 0;
+}
 /* project buttons */
 
 .button{
@@ -189,13 +258,16 @@ a:active {color: #9bd0c8;} /* set link style when clicked */
 }
 
 #work .row {
-    border-bottom: 1px solid #d3384e;
+    padding-top: 50px ;
     padding-bottom: 25px;
 }
 
-#hero h1 {text-align: left;}
 
-#about_header h1, #me h2 {text-align: center;}
+#hero h1, h3 {text-align: right;}
+
+#about_header h1, #me h1 {text-align: center;}
+
+
 
 /* styling the navigation bar */
 nav > ul {
@@ -252,14 +324,15 @@ nav > ul > li > a {
 
 /* creating padding around sections in fitted */
 .section {
-    border-bottom: 1px solid #d3384e;
-    padding-bottom: 25px;
+    border-bottom: 3px solid #A392D2;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .section_picture_first {
-    padding-top: 35px;
-    border-bottom: 1px solid #d3384e;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    border-bottom: 3px solid #A392D2;
+    padding-bottom: 50px;
 }
 
 /* adding in breakpoints for screen sizes */
