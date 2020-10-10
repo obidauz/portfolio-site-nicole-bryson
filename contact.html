@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<!-- START HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&family=Prompt:wght@100;200;300;400;500&family=Antic+Didone&display=swap" rel="stylesheet">
+    <link href="files/css/all.css" rel="stylesheet">
+    <title>Contact Page</title>
+  </head>
+  <!-- END OF HEAD -->
+  <!-- START BODY -->
+  <body>
+    <!-- START HEADER SECTION -->
+    <header>
+      <div class="container">
+        <!-- LOGO WITH HOME LINK -->
+          <div class= "navtoggle" id="myNavtoggle">
+            <a href="index.html">
+              <img src="files/logo.svg" class="logo" alt="Nicole Bryson">
+            </a>
+            <!-- NAVIGATION MENU -->
+            <nav>
+              <ul>
+                <li><a href="index.html" class="worknav">Work</a></li>
+                <li><a href="about.html" class="aboutnav">About</a></li> 
+                <li><a href="contact.html" class="currentLink" class="contactnav" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START MAIN SECTION -->
+    <main>
+      <!-- HERO SECTION -->
+      <div id="hero">
+        <div class="container">
+          <h3>get in touch!</h3>
+          <h1>
+						If you like what 
+						<span> you've seen you can </span>
+            <span> reach out to me here!</span>
+          </h1>
+        </div>
+      </div>
+      <!-- END HERO -->
+
+      <!-- CONTACT SECTION -->
+      <div id="work">
+        <div class="container">
+          <!-- CONTACT INFO -->
+					<div class="row"><!-- open row with 2 columns -->
+						<div class="column col-md-6 col-lg-5"><!-- open first column for image -->
+              <picture>
+                <source srcset="files/contact_me.svg" media="(max-width:767px)">
+                <img src="files/contact_me.svg" alt="contact Image" class="no_boxshadow">
+              </picture>
+						</div>
+						<!-- end first column -->
+						<!--open second column for contact-->
+            <div class="column col-md-6 col-lg-7" style="text-align: left; padding-top: 75px;" >
+							<p>You can send me an email at <a class="social-links" href="nicole.e.bryson@gmail.com">nicole.e.bryson@gmail.com</a></p>
+							<p>If email isn't your thing you can also check out my <a class="social-links" href="https://www.linkedin.com/in/nicole-bryson/" target="_blank">LinkedIn</a> profile!</p>
+							<p>Maybe you just want to see my portfolio in a different format? Then you can check out my <a class="social-links" href="https://www.behance.net/nicolebryson" target="_blank">Behance</a>page!</p>
+							<p>Or if you just want to learn a little but more about where I've been or what I've done you can check out my <a class="social-links" href="files/nicole_bryson_resume_2020.pdf" target="_blank">resume!</a></p><!-- open first column for image -->
+						</div>
+						<!-- end second column -->
+					</div>
+					<!-- end row -->
+          <!-- END CONTACT-->
+        </div>
+      </div>
+      <!-- END WORK -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER SECTION -->
+    <footer id="contact">
+      <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-5">
+              <p style="text-align: left;">nicole.e.bryson@gmail.com</p>
+            </div>
+            <div class="column col-md-6 col-lg-5" style="text-align: right;">
+              <p><!-- open space for social media links -->
+                <!-- LinkedIn-->
+                <a class="social-links" href="https://www.linkedin.com/in/nicole-bryson/" target="_blank">
+                  linkedin
+                </a>
+                <!-- Behance -->
+                <a class="social-links" href="https://www.behance.net/nicolebryson" target="_blank">
+                  behance
+                </a>
+                <a class="social-links" href="files/nicole_bryson_resume_2020.pdf" target="_blank">resume</a>
+              </p>
+            </div>
+          </div>
+<!-- end email space -->
+<!-- end social media space -->
+        <p>Copyright Nicole Bryson 2020</p>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+  <!-- END OF BODY -->
+</html>
