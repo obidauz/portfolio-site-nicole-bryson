@@ -21,7 +21,7 @@ html {
 body { /* select body design */
     /*background-color: #fffefc;*/
     font-family: 'Prompt', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.6;
     color: #130f3a;
@@ -31,9 +31,27 @@ body { /* select body design */
 }
 
 header { /* set header and footer design */
-    padding: 10px 0 4px;
+    padding: 10px 0px;
     position: fixed;
     width: 100%;
+    top: 0px;
+    left:0;
+    background-color:rgba(255, 245, 243, 0.9);
+    border-left: 20px solid #FFFFFF;
+    border-right: 20px solid #FFFFFF;
+    border-top: 20px solid #FFFFFF;
+}
+
+header.fitted_header { /* set header and footer design */
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0;
+    background-color: #f9f6ffd6;
+    border-left: 20px solid #FFFFFF;
+    border-right: 20px solid #FFFFFF;
+    border-top: 20px solid #FFFFFF;
 }
 
 #hero {
@@ -111,7 +129,7 @@ img {width: 100%; border-radius: 20px; box-shadow: 0px 10px 37px -13px rgba(0,0,
 }
 
 .text-wrap{
-    width: 50%;
+    width: 100%;
     float: left;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -119,7 +137,7 @@ img {width: 100%; border-radius: 20px; box-shadow: 0px 10px 37px -13px rgba(0,0,
 }
 
 .text-wrap-left{
-    width: 50%;
+    width: 100%;
     float: right;
     margin-left: 30px;
     margin-bottom: 30px;
@@ -127,8 +145,8 @@ img {width: 100%; border-radius: 20px; box-shadow: 0px 10px 37px -13px rgba(0,0,
 }
 
 
-.logo {max-width: 150px; box-shadow: none; border-radius: 0px;} /* set width for logo */
-
+.logo {max-width: 150px; box-shadow: none; border-radius: 0px;}     /* set width for logo */
+a.logo:hover, a.logo:focus{ border-bottom: none;}
 
 a.social-links { /* set link style */
     color: #F98C98;
@@ -136,7 +154,6 @@ a.social-links { /* set link style */
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 0.235px;
-
 }
 
 a.social-links:hover, a.social-links:focus { /* set link style for hover and focus (on mobile) */
@@ -196,21 +213,22 @@ a.fitted-social:hover, a.fitted-social:focus { /* set link style for hover and f
     color: #F98C98;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.235px;
 }
 
 .button:hover {
-    border: #F98C98 solid 3px;
-    border-radius: 50px;
+    border-bottom: #F98C98 solid 3px;
     padding: 5px 10px;
+    letter-spacing: 0px;
 }
 
-.button:active{
+/*.button:active{
     color: rgba(255, 245, 243, 0.9);
     border: #F98C98 solid 3px;
     border-radius: 50px;
     background-color: #F98C98;
     padding: 5px 10px;
-}
+}*/
 
 
 /* email me button */
@@ -290,7 +308,8 @@ nav > ul {
     top: 1px;
     font-size: 20px;
     padding-right: 0;
-
+    border-bottom: none;
+    color: #130f3a;
 }
 
 .navtoggle.responsive nav {
@@ -374,6 +393,22 @@ nav > ul > li > a {
     #work h1 {text-align: center;}
 
     .logo {max-width: 250px;}
+
+    .text-wrap{
+        width: 50%;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-shadow: none;
+    }
+    
+    .text-wrap-left{
+        width: 50%;
+        float: right;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        box-shadow: none;
+    }
 }
 
 /* large devices (1024px and larger) */
