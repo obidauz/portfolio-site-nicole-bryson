@@ -25,8 +25,8 @@
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
-              <li><a href="about.html" class ="currentLink">About</a></li> 
-              <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+              <li><a href="about.html" class ="current_link">About</a></li> 
+              <li><a href="contact.html" >Contact</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
           </nav>
@@ -38,8 +38,8 @@
     <!-- START MAIN SECTION -->
     <main>
 			<div class="container">
-				<div class="row" style="padding-top: 25px;">
-					<h3 style="text-align: left;">all about nicole</h3>
+				<div class="row">
+					<h2 class="text_left">all about nicole</h2>
 				</div>
 			</div>
 			<!-- information-->
@@ -48,7 +48,7 @@
 					<div class="row">
 							<picture>
 								<source srcset="img/about_me/picture_of_me@1x.jpg" media="(max-width:767px)">
-								<img class="text-wrap" src="img/about_me/picture_of_me@2x.jpg" alt="FITTED Image">
+								<img class="text_wrap" src="img/about_me/picture_of_me@2x.jpg" alt="FITTED Image">
 							</picture>
 							<p>
 								I am a budding UX designer who just
@@ -98,7 +98,7 @@
 						<div class="row">
 							<!--<h1>Skills & Tools</h1>-->
 							<!-- skills column -->
-							<div class="col-md-6">
+							<div class="col-md-6 col-lg-5">
 								<h1>Relevant Skills</h1>
 								<ul>
 									<li>Mobile-first and Responsive Design</li>
@@ -111,7 +111,7 @@
 							</div>
 							<!-- end skills column-->
 							<!-- tools column-->
-							<div class="col-md-6">
+							<div class="col-md-6 col-lg-5">
 								<h1>Tools I Used</h1>
 								<ul>
 									<li>Sketch</li>
@@ -125,7 +125,7 @@
 							<!-- end tools column-->
 						</div>
 						<!-- end skills and tools-->
-					</div>
+				</div>
 					<!-- end row for columns -->
 					<!-- row for interests-->
 					<div class="container">
@@ -141,36 +141,31 @@
 						</p>
 					</div>
 					<!-- end interests -->
-				</div>
 			</div>
 			<!-- end information-->
     </main>
     <!-- END MAIN -->
 
     <!-- START FOOTER SECTION -->
-    <footer id="contact">
+	<footer id="contact">
       <div class="container">
           <div class="row">
-            <div class="column col-md-6 col-lg-5">
-              <p style="text-align: left;">nicole.e.bryson@gmail.com</p>
+            <div class="col-md-6 center text_left">
+              <p>nicole.e.bryson@gmail.com</p>
             </div>
-            <div class="column col-md-6 col-lg-5" style="text-align: right;">
-              <p><!-- open space for social media links -->
-                <!-- LinkedIn-->
-                <a class="social-links" href="https://www.linkedin.com/in/nicole-bryson/" target="_blank">
-                  linkedin
-                </a>
-                <!-- Behance -->
-                <a class="social-links" href="https://www.behance.net/nicolebryson" target="_blank">
-                  behance
-                </a>
-                <a class="social-links" href="files/nicole_bryson_resume_2020.pdf" target="_blank">resume</a>
+            <div class="col-md-6 center text_right">
+              <p>
+                <a class="social_links" href="https://www.linkedin.com/in/nicole-bryson/" target="_blank">linkedin</a>
+                <a class="social_links" href="https://www.behance.net/nicolebryson" target="_blank">behance</a>
+                <a class="social_links" href="files/nicole_bryson_resume_2020.pdf" target="_blank">resume</a>
               </p>
             </div>
           </div>
 <!-- end email space -->
 <!-- end social media space -->
-        <p>Copyright Nicole Bryson 2020</p>
+        <div class="center">
+          <p>Copyright Nicole Bryson 2020</p>
+        </div>
       </div>
     </footer>
     <!-- END FOOTER -->
