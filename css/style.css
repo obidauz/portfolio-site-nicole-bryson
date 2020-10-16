@@ -322,11 +322,15 @@ nav > ul > li > a {
     padding-top: 50px;
 }
 
-.section_picture_first {
-    padding-top: 50px;
-    border-bottom: 3px solid #A392D2;
-    padding-bottom: 50px;
+.space{
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
+
+#retrospective{
+    margin-bottom: 100px;
+}
+
 
 
 @media only screen and (max-width: 639px){
@@ -337,6 +341,10 @@ nav > ul > li > a {
 
     .col-md-6{
         width: 100%;
+    }
+
+    .no_top_padding{
+        padding-top: 0;
     }
 }
 /* adding in breakpoints for screen sizes */
