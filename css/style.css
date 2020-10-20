@@ -45,9 +45,6 @@ header.fitted_header { /* set header and footer design */
     top: 0px;
     left:0;
     background-color: #f9f6ffd6;
-    border-left: 20px solid #FFFFFF;
-    border-right: 20px solid #FFFFFF;
-    border-top: 20px solid #FFFFFF;
 }
 
 #hero {
@@ -355,6 +352,12 @@ nav > ul > li > a {
     header {
         text-align: unset;
         padding: 20px 0;
+        border-left: 20px solid #FFFFFF;
+        border-right: 20px solid #FFFFFF;
+        border-top: 20px solid #FFFFFF;
+    }
+
+    header.fitted_header{
         border-left: 20px solid #FFFFFF;
         border-right: 20px solid #FFFFFF;
         border-top: 20px solid #FFFFFF;
