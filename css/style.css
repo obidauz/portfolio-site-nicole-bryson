@@ -26,7 +26,6 @@ body { /* select body design */
     line-height: 1.6;
     color: #130f3a;
     background: rgba(255, 245, 243, 0.9);
-    border: 20px solid #FFFFFF;
     box-sizing: border-box;
 }
 
@@ -345,6 +344,10 @@ nav > ul > li > a {
 
     .no_top_padding{
         padding-top: 0;
+    }
+
+    body{
+        border: 20px solid #FFFFFF;
     }
 }
 /* adding in breakpoints for screen sizes */
