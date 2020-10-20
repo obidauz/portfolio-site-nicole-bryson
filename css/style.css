@@ -21,7 +21,7 @@ html {
 body { /* select body design */
     /*background-color: #fffefc;*/
     font-family: 'Prompt', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
     color: #130f3a;
@@ -36,9 +36,6 @@ header { /* set header and footer design */
     top: 0px;
     left:0;
     background-color:rgba(255, 245, 243, 0.9);
-    border-left: 20px solid #FFFFFF;
-    border-right: 20px solid #FFFFFF;
-    border-top: 20px solid #FFFFFF;
 }
 
 header.fitted_header { /* set header and footer design */
@@ -358,6 +355,9 @@ nav > ul > li > a {
     header {
         text-align: unset;
         padding: 20px 0;
+        border-left: 20px solid #FFFFFF;
+        border-right: 20px solid #FFFFFF;
+        border-top: 20px solid #FFFFFF;
     }
 
     nav {
