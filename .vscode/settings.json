@@ -1,8 +1,14 @@
 {
     "cSpell.words": [
+<<<<<<< Updated upstream
         "aboutnav",
         "boxshadow",
         "contactnav",
         "worknav"
+=======
+        "crossorigin",
+        "emailme",
+        "viewresume"
+>>>>>>> Stashed changes
     ]
 }

@@ -47,6 +47,15 @@ header.fitted_header { /* set header and footer design */
     background-color: #f9f6ffd6;
 }
 
+header.inkme_header { /* set header and footer design */
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0;
+    background-color: #E0F4FFd6;
+}
+
 #hero {
     padding: 20px 0px;
     display: inline-block;
@@ -77,6 +86,17 @@ main {
     margin-top: 25px;
 }
 
+#inkme_contact {
+    color: #00A3FF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.copyright{
+    font-size: 12px;
+}
+
 
 h1 { /* set style for all headings */
     font-family: 'Antic Didone', serif;
@@ -96,6 +116,13 @@ h2.fitted_style{
     color: #A392D2;
     text-transform: uppercase;
 }
+
+h2.inkme_style{
+    font-family: 'Prompt', serif;
+    color: #00A3FF;
+    text-transform: uppercase;
+}
+
 
 /* set font sizes for all headings */
 h1 {font-size: 2.5em; font-weight: normal;}
@@ -200,6 +227,30 @@ a.fitted_social:hover, a.fitted_social:focus { /* set link style for hover and f
     font-weight: bold;
     padding: 0 15.235px;
     border-bottom: #A392D2 3px solid ;
+    letter-spacing: 0;
+}
+
+a.inkme_style:hover, a.inkme_style:focus { /* set link style for hover and focus (on mobile) */
+    color: #00A3FF;
+    font-weight: bold;
+    border-bottom: #00A3FF 3px solid;
+    letter-spacing: 0;
+}
+
+a.inkme_social { /* set link style */
+    color: #00A3FF;
+    text-decoration: none;
+    padding: 0 15px;
+    letter-spacing: 0.235px;
+    border-bottom: transparent 3px;
+
+}
+
+a.inkme_social:hover, a.inkme_social:focus { /* set link style for hover and focus (on mobile) */
+    color: #00A3FF;
+    font-weight: bold;
+    padding: 0 15.235px;
+    border-bottom: #00A3FF 3px solid ;
     letter-spacing: 0;
 }
 /* project buttons */

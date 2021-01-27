@@ -41,6 +41,7 @@
       <!-- HERO SECTION -->
       <div id="hero">
         <div class="container">
+          <!-- create two columns -->
           <div class="col-md-6"></div>
           <div class="col-md-6">
             <h2>hi there!</h2>
@@ -48,27 +49,26 @@
               Nicole Bryson is a UX/UI designer living in and rediscovering Los Angeles.
             </h1>
           </div>
-
-        </div>
+        </div> <!-- close container -->
       </div>
       <!-- END HERO -->
-
       <!-- WORK SECTION -->
       <div id="work">
         <div class="container">
           <!-- FITTED -->
-          <div class="row"><!-- open row with 2 columns for project -->
-            <div class="flex_me">
+          <div class="row" style="background-image: url(files/blobby.png); background-position: right; background-repeat: no-repeat;"><!-- open row with 2 columns for project -->
+            <div class="flex_me"> <!-- div for reversing column placement in mobile -->
+              <!-- open first column for text -->
               <div class="column col-md-6 col-lg-7 flex center text_right">
                 <h1>Fitted</h1>
                 <p>FITTED is a responsive web fitness app created using User Interface Design practices.</p>
-                <p><b>Tools used:</b> Sketch, InVision, Proto.io</p>
+                <p><b>Tools used:</b> Sketch, InVision</p>
                 <div class="button_margin">
                   <a href="fitted.html" class="button center">view case study</a>
                 </div>
-                <!-- open first column for image -->
               </div><!-- end first column -->
-              <div class="column col-md-6 col-lg-5 flex"><!-- open second column for text -->
+              <!-- open second column for text -->
+              <div class="column col-md-6 col-lg-5 flex">
                 <picture>
                   <source srcset="img/fitted/1x/fitted_image@1x.jpg" media="(max-width:767px)">
                   <img src="img/fitted/2x/fitted_image@2x.jpg" alt="FITTED Image" class="grow">
@@ -77,31 +77,34 @@
             </div> <!--end of flex box-->
           </div><!-- end row -->
           <!-- END FITTED-->
-
           <!-- INKME -->
           <div class="row"><!-- open row with 2 columns for project -->
-            <div class="column col-md-6 col-lg-7"><!-- open first column for image -->
+            <!-- open first column for image -->
+            <div class="column col-md-6 col-lg-7">
               <picture>
                 <source srcset="img/inkme/1x/inkme_image@1x.jpg" media="(max-width:767px)">
                 <img src="img/inkme/2x/inkme_image@2x.jpg" alt="inkMe Image" class="grow">
               </picture>
             </div><!-- end first column -->
-            <div class="column col-md-6 col-lg-5 center text_left"><!-- open second column for text -->
+            <!-- open second column for text -->
+            <div class="column col-md-6 col-lg-5 center text_left">
               <h1><i>ink</i>Me</h1>
               <p><i>ink</i>Me is as mobile tattoo finding app created from the ground up using the User Experience Design process.</p>
               <p><b>Tools used:</b> Sketch, Adobe Illustrator, InVision, ProtoPie</p>
-              <!--<a href="#" class="button">view case study</a>-->
+              <a href="inkme.html" class="button">view case study</a>
             </div><!-- end second column -->
           </div><!-- end row -->
           <!-- END INKME -->
-          <!-- animation -->
+          <!-- ANIMATION -->
           <div class="row"><!-- open row with 2 columns for project -->
-            <div class="flex_me">
-              <div class="column col-md-6 center text_right"><!-- open first column for text -->
+            <div class="flex_me"> <!--to switch column position on mobile-->
+              <!-- open first column for text -->
+              <div class="column col-md-6 center text_right">
                 <h1>CSS Animation</h1>
                 <p>Just for fun (and to show off some of my coding skills) here is an example of an SVG animation through CSS.</p>
               </div><!-- end first column -->
-              <div class="column col-md-6"><!-- open second column for image -->
+              <!-- open second column for image -->
+              <div class="column col-md-6">
                   <svg xmlns="http://www.w3.org/2000/svg" class="origami_desert" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 425.2 425.2">
                     <defs>
                     <radialGradient id="radial-gradient" cx="198.45" cy="226.46" r="283.9" gradientTransform="translate(15.26 -12.59) scale(0.99)" gradientUnits="userSpaceOnUse">
@@ -286,22 +289,20 @@
     <!-- START FOOTER SECTION -->
     <footer id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 center text_left">
+        <div class="row"> <!--row with two columns-->
+          <div class="col-md-6 center text_left"><!--email-->
             <p>nicole.e.bryson@gmail.com</p>
-          </div>
-          <div class="col-md-6 center text_right">
+          </div><!-- end email space -->
+          <div class="col-md-6 center text_right"><!--social media-->
             <p>
               <a class="social_links" href="https://www.linkedin.com/in/nicole-bryson" target="_blank">linkedin</a>
               <a class="social_links" href="https://www.behance.net/nicolebryson" target="_blank">behance</a>
               <a class="social_links" href="files/nicole_bryson_resume_2020.pdf" target="_blank">resume</a>
             </p>
-          </div>
+          </div><!-- end social media space -->
         </div>
-<!-- end email space -->
-<!-- end social media space -->
-        <div class="center">
-          <p>Copyright Nicole Bryson 2020</p>
+        <div class="center copyright">
+          <p>Copyright © 2021 Nicole Bryson</p>
         </div>
       </div>
     </footer>
