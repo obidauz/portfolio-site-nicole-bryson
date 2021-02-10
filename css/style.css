@@ -1,15 +1,12 @@
 /*
 colors used:
-blue: #2b56a0;
-dark blue: #130f3a;
-peacock green: #2b7e78;
-orange #e1541f;
-light green: #d9eec5;
-light blue: #9bd0c8;
-light peach: #fca989;
-yellow: #ebc024;
-dusty rose: #db686f;
-bright pink: #d3384e;
+main background light pink: rgba(255, 245, 243, 0.9);
+main title pink: #F98C98;
+body text dark blue: #130f3a;
+inkme background light blue: #E0F4FF;
+inkme title blue: #00A3FF;
+fitted background light lavender: #f9f6ff;
+fitted title light purple: #A392D2;
 */
 
 * {box-sizing: border-box;} /* sets box model*/
@@ -19,7 +16,6 @@ html {
 }
 
 body { /* select body design */
-    /*background-color: #fffefc;*/
     font-family: 'Prompt', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -29,7 +25,7 @@ body { /* select body design */
     box-sizing: border-box;
 }
 
-header { /* set header and footer design */
+header { 
     padding: 10px 0px;
     position: fixed;
     width: 100%;
@@ -38,7 +34,7 @@ header { /* set header and footer design */
     background-color:rgba(255, 245, 243, 0.9);
 }
 
-header.fitted_header { /* set header and footer design */
+header.fitted_header {
     padding: 10px 0px;
     position: fixed;
     width: 100%;
@@ -47,7 +43,7 @@ header.fitted_header { /* set header and footer design */
     background-color: #f9f6ffd6;
 }
 
-header.inkme_header { /* set header and footer design */
+header.inkme_header {
     padding: 10px 0px;
     position: fixed;
     width: 100%;
@@ -360,8 +356,14 @@ nav > ul > li > a {
 }
 
 /* creating padding around sections in fitted */
-.section {
+.fitted_section {
     border-bottom: 3px solid #A392D2;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.inkme_section {
+    border-bottom: 3px solid #00A3FF;
     padding-bottom: 50px;
     padding-top: 50px;
 }
