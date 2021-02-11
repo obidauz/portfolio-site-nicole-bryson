@@ -393,6 +393,10 @@ nav > ul > li > a {
         padding-top: 0;
     }
 
+    .inkme_good {
+        text-align: center;
+    }
+
 
 }
 /* adding in breakpoints for screen sizes */
